@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTheme" parent="@android:style/Theme.Light">
+        <item name="android:colorBackground">@color/semi_black</item>
+        <item name="android:windowBackground">@color/semi_red</item>
+    </style>
+    <style name="TitleTheme">
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+    <style name="ConfigTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="BoyTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+    <style name="GrayTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+</resources>

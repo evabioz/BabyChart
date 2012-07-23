@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="update_dialog_items">
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+        <item>Manually</item>
+    </string-array>
+    <string-array name="items_dialog_items">
+        <item>删除</item>
+    </string-array>
+    <string-array name="share_dialog_items">
+        <item>Handset share</item>
+        <item>Facebook share</item>
+        <item>Evernote share</item>
+    </string-array>
+    <string-array name="image_dialog_items">
+        <item>照相</item>
+        <item>图库照片</item>
+    </string-array>
+    <string-array name="profile_dialog_items">
+        <item>设为显示项目</item>
+        <item>编辑项目</item>
+        <item>删除项目</item>
+    </string-array>
+</resources>

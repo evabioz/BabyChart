@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="round_value">10</string>
+    <string name="move_threshold">5</string>
+    <string name="cut">20</string>
+</resources>

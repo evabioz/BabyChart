@@ -1,25 +1,84 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.babychart"
-    android:versionCode="1"
-    android:versionName="1.0" >
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.babychart" android:versionCode="1" android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="15" />
-
-    <application
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
+    
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:theme="@style/TitleTheme" android:name="com.babydaychart.common.BabyWidgetConfigure" android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name=".BabyMain" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="babydaychart_cmd_free" android:host="babymain" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name="com.babydaychart.common.SleepActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="babydaychart_cmd_free" android:host="sleep" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name="com.babydaychart.common.DiaperActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="babydaychart_cmd_free" android:host="diaper" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name="com.babydaychart.common.BottleActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="babydaychart_cmd_free" android:host="bottle" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name="com.babydaychart.common.NurseActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="babydaychart_cmd_free" android:host="nurse" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name="com.babydaychart.common.FoodActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name="com.babydaychart.common.MedicalActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name="com.babydaychart.common.HealthActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name="com.babydaychart.common.MoodActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/ConfigTheme" android:label="@string/app_name" android:name="com.babydaychart.common.GraphActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="babydaychart_cmd_free" android:host="graph" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ConfigTheme" android:label="@string/app_name" android:name="com.babydaychart.common.HelpActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/TitleTheme" android:label="@string/profile_title" android:name="com.babydaychart.common.ProfileActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:theme="@style/ConfigTheme" android:label="@string/app_name" android:name="com.babydaychart.common.cropimage.CropImage" android:screenOrientation="portrait" />
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name="com.babydaychart.common.WheelDateActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:theme="@style/BoyTheme" android:label="@string/app_name" android:name="com.babydaychart.common.WheelItemActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
     </application>
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

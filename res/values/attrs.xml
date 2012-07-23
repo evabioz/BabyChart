@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textHead" format="integer" />
+    <attr name="textTail" format="integer" />
+    <attr name="textY" format="integer" />
+    <attr name="text1" format="string" />
+    <attr name="text" format="string" />
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/idHeadFrame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:id="@id/main_head" layout="@layout/headingbar" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="top" android:id="@id/frame0" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="120.0px">
+        <ListView android:id="@id/mainList" android:layout_width="fill_parent" android:layout_height="450.0px" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/ivBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0px" android:src="@drawable/b_bg_main_base" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/iconSleep" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="5.0px" android:layout_marginBottom="100.0px" android:src="@drawable/icon_sleep" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/iconDiaper" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="100.0px" android:layout_marginBottom="100.0px" android:src="@drawable/icon_diaper" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/iconBottle" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="195.0px" android:layout_marginBottom="100.0px" android:src="@drawable/icon_milk" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/iconNurse" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="290.0px" android:layout_marginBottom="100.0px" android:src="@drawable/icon_breastmilk" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/iconFood" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="385.0px" android:layout_marginBottom="100.0px" android:src="@drawable/icon_food" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/iconMedical" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="5.0px" android:layout_marginBottom="6.0px" android:src="@drawable/icon_medical" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/iconHealth" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="100.0px" android:layout_marginBottom="6.0px" android:src="@drawable/icon_health" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/iconMood" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="195.0px" android:layout_marginBottom="6.0px" android:src="@drawable/icon_mood" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/iconGraph" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="290.0px" android:layout_marginBottom="6.0px" android:src="@drawable/icon_chart" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/iconConfig" android:layout_width="90.0px" android:layout_height="90.0px" android:layout_marginLeft="385.0px" android:layout_marginBottom="6.0px" android:src="@drawable/icon_help" />
+    </FrameLayout>
+</FrameLayout>
